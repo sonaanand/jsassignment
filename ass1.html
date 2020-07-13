@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>
+        display the current date and time
+    </title>
+</head>
+
+<body>
+    <script>
+        //current day
+        var currentdate = new Date(),
+            weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+        var day = weekday[currentdate.getDay()];
+        document.write('today is:', day);
+        document.write("<br>")
+
+
+        // current time
+        var d = new Date();
+        var n = d.toLocaleTimeString("en-US");
+        document.write("current time is:", n);
+    </script>
+</body>
+
+</html>
