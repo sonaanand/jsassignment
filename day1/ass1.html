@@ -1,0 +1,85 @@
+
+<html>
+    <head>
+        <title>day1</title>
+    </head>
+<body>
+    <script>
+        //methods of console
+        //console.log()
+console.log("hello")
+console.log('sona');  
+console.log(1); 
+console.log(false); 
+console.log(null); 
+console.log(undefined);  
+console.log([1, 2, 3, 4]); // array
+console.log({a:1, b:2, c:3}); // object 
+ //console.error()
+ console.error("error found");
+// console.warn()  
+console.warn(' warning.');
+
+// console.time() and console.timeEnd()  
+console.time('abc'); 
+ let fun1 =  function(){ 
+     console.log('fun1 is running'); 
+ } 
+ let fun2 = function(){ 
+     console.log('fun2 is running..'); 
+ } 
+ fun1(); // calling fun(); 
+ fun2(); // calling fun2(); 
+console.timeEnd('abc');
+// console.table() 
+console.table({'name':'sona','age':20,'dept':'cse'}); 
+// console.count() method 
+for(let i=0;i<5;i++){ 
+    console.count(i+1);
+     
+}
+// console.group() and console.groupEnd() method 
+console.group('demo'); 
+  console.warn('warning!'); 
+  console.error('error '); 
+  console.log('hai this is javascript'); 
+console.groupEnd('demo'); 
+console.log('new section');  
+//other eg in console.group()
+console.group('grandpa grps'); 
+console.log('grandpa'); 
+console.log('grandma'); 
+console.group('parents'); 
+console.log('father'); 
+console.log('mother'); 
+console.group('childrens'); 
+console.log('daughter'); 
+console.log('son'); 
+console.groupEnd('demo'); 
+
+// Custom Console log example 
+const spacing = '10px'; 
+  const styles =  
+        `padding: ${spacing}; background-color: black; color: pink; font-style:italic; border: 1px solid black; font-size: 2em;`; 
+  console.log('%cJAVASCRIPT', styles); 
+//assert
+console.assert(false, 'the word is %s', 'foo')
+//console.count
+console.count("hello");
+console.count("hello");
+console.count("hello");
+console.count("welcome");
+console.count("hello");
+//console.countReset 
+console.countReset("hello");
+console.countReset("hello");
+console.countReset("hello");
+//console.clear
+console.clear();
+//console.collapse
+console.log("Hello world!");
+console.groupCollapsed();
+console.log("Hello again, i'm javascript!");
+    </script>
+</body>
+</html>

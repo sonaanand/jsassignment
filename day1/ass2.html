@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>day1</title>
+    </head>
+    <body>
+        <script>
+                //var eg 1
+                //var is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function.
+                var test = "hey hi";
+                function newFunction() {
+                var hello = "hello";
+                }
+                console.log('hello'); 
+                //var eg 2
+                var x = 1;
+                if (x === 1) {
+                var x = 2;
+                console.log(x);
+                }
+                console.log(x);
+
+
+                //const eg 1
+                //Variables declared with the const maintain constant values
+                const number = 42;
+                try {
+                number = 99;
+                } catch (error) {
+                console.log(error);
+                }
+                console.log(number);
+                //let eg 1
+                function makeCounter() {
+                let count = 0;
+                return function() {
+                return count++;
+                 };
+                }
+                let counter = makeCounter();
+                alert(counter()); 
+                alert(counter()); 
+                alert(counter());
+            </script>
+    </body>
+</html>

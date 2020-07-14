@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>
+            day1
+        </title>
+    </head>
+    <body>
+       <script>
+        //Data Types in JavaScript
+        //Data types basically specify what kind of data can be stored and manipulated within a program.
+        //There are six basic data types in JavaScript which can be divided into three main categories:
+        //* primitive --->string, Number, and Boolean are primitive data types
+        //*composite --->Object, Array, and Function  objects are composite data 
+        //* special data--->Whereas Undefined and Null are special data types
+
+       // string datetype
+        document.write("<h3>string</h3>")
+        var a = 'Hi javascript!';  
+        var b = "hello!";  
+        document.write(a + "<br>");
+        document.write(b);
+
+        //number
+        document.write("<h3>number</h3>")
+        var a = 25;         // integer
+        var b = 80.5;       // floating-point number
+        var c = 4.25e+6;    // exponential notation
+        var d = 4.25e-6;    // exponential notation
+        document.write(a + "<br>");
+        document.write(b + "<br>");
+        document.write(c + "<br>");
+        document.write(d);
+
+        //boolean-->The Boolean data type can hold only two values: true or false
+        document.write("<h3>Boolean</h3>")
+        var a = 2, b = 5, c = 10;
+        document.write(b > a) // Output: true
+        document.write("<br>");
+        document.write(b > c) // Output: false 
+
+        // Creating variables
+        document.write("<h3>undefined</h3>")
+        var a;
+        var b = "Hello World!"
+        document.write(a + "<br>");
+        document.write(b);
+
+        //null date type
+        document.write("<h3>null date type</h3>")
+        var a = null;
+        alert(a); 
+        var b = "Hello World!"
+        alert(b); 
+        b = null;
+        alert(b)
+
+        //The Object Data Type
+        document.write("<h3>The Object Data Type</h3>")
+        var emptyObject = {};
+        var person = {"name": "Clark", "surname": "Kent", "age": "36"};
+        var car = {
+            "modal": "BMW X3",
+            "color": "white",
+            "doors": 5
+        }
+        console.log(person);
+        console.log(car);
+
+        //array
+        document.write("<h3>array</h3>")
+        var colors = ["Red", "Yellow", "Green", "Orange"];
+        var cities = ["London", "Paris", "New York"];
+        document.write(colors[0] + "<br>");   
+        document.write(cities[2]); 
+        //The Function Data Type
+        document.write("<h3>function data type</h3>")
+        var greeting = function(){ 
+        return "Hello World!"; 
+            }
+        document.write(typeof greeting)
+        document.write("<br>");
+        document.write(greeting());     
+        </script>
+    </body>
+</html>
